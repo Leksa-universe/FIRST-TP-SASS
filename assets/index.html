@@ -4,118 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La montagne ça vous gagne</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <title>La Montagne</title>
+    <link rel="stylesheet" href="../assets/styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- ***********************HEADER*************************** -->
-
     <header>
-        <div>
-            <h1>la montagne <br> ça vous gagne</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt quasi hic necessitatibus sequi
-                deleniti!</p>
-            <a href="#" class="arrow-down"><i class="fa-solid fa-arrow-down"></i></a>
+        <div class="header-container">
+            <h1>la montagne ça vous gagne</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas inventore, ducimus illo ea
+                iusto.</p>
+            <span><a href="#main"><i><i class="fa-solid fa-arrow-down"></i></i></a></span>
         </div>
+
         <nav>
-            <ul class="categories">
-                <li><a href="#">This is massively</a></li>
-                <li><a href="#">generic page</a></li>
-                <li><a href="#">elements reference</a></li>
-            </ul>
-            <ul class="network">
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#">this is massively</a></li>
+                    <li><a href="#">generic page</a></li>
+                    <li><a href="#">elements reference</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i>></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- ***********************SECTION-1*************************** -->
+    <!-- ************************MAIN******************************** -->
 
-    <section class="section-1">
-        <h3>April 25, 2017</h3>
-        <h2>and this is a massive headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur qui fugit commodi ducimus culpa
-            officiis nihil impedit. Minima ipsum hic, illo assumenda consectetur dolorem quas!</p>
-        <!-- img  -->
-        <div></div>
-        <!-- ************* -->
-        <a href="#" class="button">full story</a>
-    </section>
+    <main>
+        <section class="section-1">
+            <h4>april 25, 2017</h4>
+            <h3>and this is a massive headline</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi iure deserunt ut natus pariatur, eaque
+                labore necessitatibus magnam. Harum voluptate consectetur officiis numquam quas! Reiciendis repudiandae
+                dolores porro vero sed!</p>
+            <img src="../assets/images/pic01.jpg"
+                alt="Sportif entrain de sauter d'un rocher sous un ciel bleu et un magnifique soleil">
+            <a href="#" class="btn">full story</a>
+        </section>
 
-    <!-- ***********************SECTION-2*************************** -->
+        <section class="section-2">
+            <div class="left-part">
+                <h4>april 24, 2017</h4>
+                <h5>sed magna ipsum faucibus</h5>
+                <img src="../assets/images/pic02.jpg"
+                    alt="Pleine bosseuse, sous un beau couché de soeil qui donne un dégradé de couleur vive en direction du ciel.">
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab pariatur, quis tempore dolorum culpa velit.
+            </p>
+            <a href="#" class="btn">full story</a>
 
-    <section class="section-2">
-        <div>
-            <h3>April 24, 2017</h3>
-            <h2>sed magna ipsum faucibus</h2>
-            <div class="img"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta exercitationem est, consequatur quisquam
-                quasi inventore commodi reprehenderit ex ipsum error?</p>
-            <a href="#" class="button">full story</a>
-        </div>
-        <div>
-            <h3>April 22, 2017</h3>
-            <h2>primis eget imperdiet lorem</h2>
-            <div class="img"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta exercitationem est, consequatur quisquam
-                quasi inventore commodi reprehenderit ex ipsum error?</p>
-            <a href="#" class="button">full story</a>
-        </div>
-    </section>
+            <div class="right-part">
+                <h4>april 22,2017</h4>
+                <h3>primis eget imperdiet lorem</h3>
+                <img src="../assets/images/pic03.jpg"
+                    alt="deux personnes sur un pic de falaise admire les bras en l'air un magnifique couché de soleil avec un paysage rempli de montagne et végétation. ">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sint quam, voluptatibus iusto ipsa
+                    officia!</p>
+                <a href="#" class="btn">full story</a>
+            </div>
+        </section>
+    </main>
 
-    <!-- ***********************PART-2*************************** -->
+    <!-- ********************FOOTER**************************** -->
 
-    <section class="part-2">
+    <footer>
         <div class="form">
             <form action="#">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                </div>
-                <div>
-                    <label for="email">email</label>
-                    <input type="text" id="email">
-                </div>
-                <div><label for="message">message</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <input type="submit" value="send message" class="button">
+                <label for="name">name</label>
+                <input type="text" id="name">
+                <label for="email">email</label>
+                <input type="text" id="email">
+                <label for="message">message</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="submit" class="btn" value="send message">
             </form>
         </div>
-        <div class="contact">
+
+        <div class="infos">
             <div>
-                <h4>address</h4>
+                <h5>address</h5>
                 <p>1234, Somewhere Road #87257
-                    <br> Nashville, TN 00000-0000
+                    <br>
+                    Nashville, TN 00000-0000
                 </p>
             </div>
             <div>
-                <h4>phone</h4>
-                <p>(000)000-0000</p>
+                <h5>phone</h5>
+                <p>(000) 000-0000</p>
             </div>
             <div>
-                <h4>email</h4>
-                <p>info@untitled.Itd</p>
+                <h5>email</h5>
+                <p>info@untitled.ltd</p>
             </div>
             <div>
-                <h4>social
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                    </ul>
-                </h4>
+                <h5>social</h5>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i>></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
+    </footer>
 </body>
 
 </html>

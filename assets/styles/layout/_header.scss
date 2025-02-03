@@ -1,0 +1,75 @@
+header {
+    height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    @include centerChild;
+    flex-direction: column;
+    text-align: center;
+    color: $white1;
+
+    &::before {
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        z-index: 200;
+        position: absolute;
+        opacity: 1;
+        animation: blackAnim ease 0.8s forwards;
+        
+        @keyframes blackAnim {
+            to {
+                opacity: 0;
+            }
+        }
+
+    }
+
+    .header-container {
+
+
+        text-align: center;       
+        width: 80%;
+        opacity: 0;
+        transform: translateY(45px);
+        animation: headAnim ease 1.2s forwards;
+
+        @keyframes headAnim {
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        
+        h1 {
+            @include title;
+            letter-spacing: 6px;
+            font-size: 4rem;
+        }
+        
+        p {
+            margin: 40px auto 60px;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        span {
+            a,
+            a:visited {
+            color: $white1;
+            display: inline-block;
+            
+        }
+        
+        i {
+            height: 60px;
+            width: 60px;
+            border: solid 1px $white1;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            @include centerChild;
+            }
+        }
+    }    
+}

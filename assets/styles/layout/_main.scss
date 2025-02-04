@@ -1,0 +1,64 @@
+main {
+    background: $white1;
+    width: 85%;
+    margin: 0 auto 30px;
+
+    .section-1 {
+        width: 80%;
+        margin: 0 auto;
+
+        span {
+            text-transform: capitalize;
+            padding: 70px 0;
+            display: block;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 35%;
+                height: 1px;
+                background: $grey1;
+                position: absolute;
+                top: 50%;
+                left: 15%;
+                transform: translateX(-50%)
+
+            }
+
+            &::after {
+                content: "";
+                width: 35%;
+                height: 1px;
+                background: $grey1;
+                position: absolute;
+                top: 50%;
+                right: 15%;
+                transform: translateX(50%)
+
+            }
+        }
+
+        h2 {
+            @include title;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 40px auto;
+            font-style: italic;
+            line-height: 35px;
+            font-size: 0.9rem;
+        }
+
+        img {
+        height: 350px;
+    }
+
+    button {
+        display: block;
+        margin: 50px auto 80px;
+    }
+    }
+    
+}

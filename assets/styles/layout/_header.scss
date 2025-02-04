@@ -1,18 +1,14 @@
 header {
-    height: 100vh;
-    max-width: 1300px;
-    margin: 0 auto;
-    @include centerChild;
-    flex-direction: column;
-    text-align: center;
     color: $white1;
+    min-height: 100vh;
     position: relative;
 
     .header-container {
-
-
-        text-align: center;       
-        width: 80%;
+        @include centerChild;
+        flex-direction: column;
+        margin: 0 auto;
+        min-height: 100vh;
+        text-align: center;
         opacity: 0;
         transform: translateY(45px);
         animation: headAnim ease 1.2s forwards;
@@ -27,8 +23,8 @@ header {
         
         h1 {
             @include title;
-            letter-spacing: 6px;
             font-size: 4rem;
+            letter-spacing: 6px;
 
             @media screen and (max-width: 620px) {
                 font-size: 2.5rem;
@@ -51,21 +47,13 @@ header {
         }
 
         span {
-            a,
-            a:visited {
-            color: $white1;
-            display: inline-block;
-            
-        }
-        
-        i {
             height: 60px;
             width: 60px;
-            border: solid 1px $white1;
+            border: solid 2px $white1;
             border-radius: 50px;
+            color: $white1;
             font-size: 1.2rem;
-            @include centerChild;
-            }
+            @include centerChild;           
         }
     }    
 }

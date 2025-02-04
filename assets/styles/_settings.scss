@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Inter";
-    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(../fonts/Inter-VariableFont_opsz\wght.ttf);
 }
 
 @font-face {
@@ -12,7 +12,7 @@ $font1: Inter, sans-serif;
 $font2: Merriweather, sans-serif;
 $white1: rgb(247, 247, 247);
 $black1: rgb(22, 22, 22);
-$grey1: rgb(226, 226, 226);
+$grey1: rgb(228, 228, 228);
 $grey2: rgb(158, 158, 158);
 $grey3: rgb(184, 184, 184);
 
@@ -44,6 +44,25 @@ body {
     font-family: $font2;
     min-height: 100vh;
     margin: 0 auto;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: black;
+        animation: blackAnim 1.5s ease forwards;
+        animation-delay: 0.15s;
+        
+        @keyframes blackAnim {
+            to {
+                opacity: 0;
+            }
+        }
+    }
 }
 
 ul {

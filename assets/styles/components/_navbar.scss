@@ -11,9 +11,16 @@ nav {
     background: rgba(255, 255, 255, 0.25);
     color: $white1;
 
+    
     ul {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+        }
     }
 
     .nav-left {
@@ -29,10 +36,20 @@ nav {
             height: 100%;
             display: flex;
             align-items: center;
+            justify-content: space-around;
             cursor: pointer;
 
+            @media screen and (max-width: 920px) {
+                font-size: 0.6rem;
+            }
+
+            @media screen and (max-width: 830px) {
+                font-size: 0.5rem;
+            }
+
+
             &:first-child {
-                background: $white1;
+                background: $grey2;
                 color: $black1;
             }
 
@@ -50,6 +67,9 @@ nav {
         justify-content: space-around;
         margin-right: 10px;
 
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
         li {
             transition: 0.15s;
             cursor: pointer;
